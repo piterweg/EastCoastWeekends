@@ -15,6 +15,7 @@ export const site = {
   nav: [
     { id: "weekends", label: "Weekends", href: "weekends.html" },
     { id: "destinations", label: "Destinations", href: "destinations.html" },
+    { id: "plan", label: "Plan", href: "when-to-go.html" },
     { id: "about", label: "About", href: "about.html" },
   ],
   footer: [
@@ -23,6 +24,8 @@ export const site = {
       links: [
         { label: "Weekend planner", href: "weekends.html" },
         { label: "Destinations", href: "destinations.html" },
+        { label: "One night or two?", href: "one-or-two-nights.html" },
+        { label: "When to go", href: "when-to-go.html" },
       ],
     },
     {
@@ -37,6 +40,8 @@ export const site = {
         { label: "Jersey Shore", href: "jersey-shore.html" },
         { label: "Berkshires", href: "berkshires.html" },
         { label: "Finger Lakes", href: "finger-lakes.html" },
+        { label: "Cape May", href: "cape-may.html" },
+        { label: "Atlantic City", href: "atlantic-city.html" },
       ],
     },
     {

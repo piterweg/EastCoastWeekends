@@ -16,9 +16,9 @@ ${pageHero({
   alt: "The Hudson Valley in autumn, with the river and wooded hills",
   crumbs: [{ href: "/", label: "Home" }, { href: "weekends.html", label: "Weekends" }],
   eyebrowText: "Weekends",
-  title: "Nine weekends, one decision",
+  title: "Eleven weekends, one decision",
   lead: "Journey time is the whole argument. Under two hours each way and you can leave on Saturday morning; over three and the trip only works with a night either end.",
-  meta: metaItems("9 destinations", "Train-first", "Fares checked November 2026", "2–3 day plans"),
+  meta: metaItems("11 destinations", "Train-first", "Fares checked November 2026", "2–3 day plans"),
 })}
 
 <section class="section">
@@ -37,6 +37,8 @@ ${pageHero({
         ["<a href=\"jersey-shore.html\"><strong>Jersey Shore</strong></a>", "NJ Transit North Jersey Coast Line", "~1h50", "~$35–40", "1–2", "Beach, boardwalk, music"],
         ["<a href=\"berkshires.html\"><strong>Berkshires</strong></a>", "Amtrak Lake Shore Limited or car", "~3h30 train; ~2h45 car", "$70–120 train", "2", "Mass MoCA, Tanglewood, countryside"],
         ["<a href=\"finger-lakes.html\"><strong>Finger Lakes</strong></a>", "Car (or fly to Rochester/Ithaca)", "~4h30–5h", "Fuel/tolls; flights extra", "2–3", "Wine, gorges, lakes"],
+        ["<a href=\"cape-may.html\"><strong>Cape May</strong></a>", "Car (seasonal bus)", "~3h car", "Fuel/tolls; bus extra", "2", "Victorian streets, beach, birding"],
+        ["<a href=\"atlantic-city.html\"><strong>Atlantic City</strong></a>", "NJ Transit bus", "~2h20–2h45", "~$40–45", "1–2", "Boardwalk, beach, casinos"],
       ],
     })}
   </div>

@@ -7,6 +7,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://eastcoastweekends.com/atlantic-city.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://eastcoastweekends.com/berkshires.html</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,6 +23,12 @@
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eastcoastweekends.com/cape-may.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eastcoastweekends.com/catskills.html</loc>
@@ -73,6 +85,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://eastcoastweekends.com/one-or-two-nights.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eastcoastweekends.com/philadelphia.html</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -95,5 +113,11 @@
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eastcoastweekends.com/when-to-go.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

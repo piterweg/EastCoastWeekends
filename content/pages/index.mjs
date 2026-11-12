@@ -19,7 +19,7 @@ ${heroHome({
   title: "Two days. One train. <em>A different pace.</em>",
   lead: "New York is a great city and a terrible place to spend every weekend. These are the trips worth the train fare — planned around what actually fits into two or three days.",
   actions: `${btn({ href: "weekends.html", label: "Browse weekends" })}${btn({ href: "destinations.html", label: "See destinations", variant: "ghost" })}`,
-  meta: metaItems("<strong>9</strong> destinations", "<strong>2–3</strong> day plans", "<strong>Train-first</strong>", "<strong>Checked</strong> November 2026"),
+  meta: metaItems("<strong>11</strong> destinations", "<strong>2–3</strong> day plans", "<strong>Train-first</strong>", "<strong>Checked</strong> November 2026"),
 })}
 
 <section class="section">
@@ -59,7 +59,7 @@ ${heroHome({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "The shortlist", title: "Nine places worth the journey", lead: "Ranked by how much weekend you get for the travel time." })}
+    ${sectionHead({ eyebrowText: "The shortlist", title: "Eleven places worth the journey", lead: "Ranked by how much weekend you get for the travel time." })}
     <div class="grid grid--3">
       ${mediaCard({ href: "hudson-valley.html", image: img("hudson-valley.webp"), alt: "The Hudson Valley", kicker: "New York State", title: "Hudson Valley", text: "Art, river towns and the easiest car-free weekend from the city.", meta: "1h20 · Metro-North" })}
       ${mediaCard({ href: "philadelphia.html", image: img("philadelphia-skyline.webp"), alt: "Philadelphia skyline", kicker: "Pennsylvania", title: "Philadelphia", text: "The most walkable big-city weekend on the East Coast.", meta: "1h05 · Amtrak" })}
@@ -70,6 +70,8 @@ ${heroHome({
       ${mediaCard({ href: "jersey-shore.html", image: img("brooklyn-bridge-park.webp"), alt: "A boardwalk at the Jersey Shore", kicker: "New Jersey", title: "Jersey Shore", text: "Asbury Park, Ocean Grove and the boardwalk, by train.", meta: "1h50 · 1–2 nights" })}
       ${mediaCard({ href: "berkshires.html", image: img("boston-skyline.webp"), alt: "Green hills in the Berkshires", kicker: "Massachusetts", title: "Berkshires", text: "Mass MoCA, Tanglewood and Great Barrington.", meta: "3h30 · 2 nights" })}
       ${mediaCard({ href: "finger-lakes.html", image: img("niagara-falls.webp"), alt: "A gorge in the Finger Lakes", kicker: "New York State", title: "Finger Lakes", text: "Watkins Glen, Seneca Lake wineries and Ithaca.", meta: "5h · 2–3 nights" })}
+      ${mediaCard({ href: "cape-may.html", image: img("brooklyn-bridge-park.webp"), alt: "Victorian houses and a beach at Cape May", kicker: "New Jersey", title: "Cape May", text: "Victorian streets and a quiet beach at the tip of New Jersey.", meta: "3h · 2 nights" })}
+      ${mediaCard({ href: "atlantic-city.html", image: img("brooklyn-bridge-park.webp"), alt: "The Atlantic City boardwalk", kicker: "New Jersey", title: "Atlantic City", text: "Boardwalk and beach, the easiest by bus.", meta: "2h30 · 1–2 nights" })}
     </div>
   </div>
 </section>
