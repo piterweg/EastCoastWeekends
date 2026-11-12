@@ -1,0 +1,225 @@
+/**
+ * Page shell: <head>, header, mobile navigation, footer and closing scripts.
+ */
+import { site } from "./site.mjs";
+import { esc, img } from "./components.mjs";
+import { assetVersion } from "./version.mjs";
+
+function head({ page }) {
+  const title = page.fullTitle ? page.title : `${page.title} | ${site.name}`;
+  const canonical = `${site.baseUrl}/${page.path === "index.html" ? "" : page.path}`;
+  const ogImage = `${site.baseUrl}/${page.ogImage || site.ogImage}`;
+  const ogType = page.ogType || (page.path === "index.html" ? "website" : "article");
+  const robots = page.noindex
+    ? "noindex, nofollow"
+    : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+
+  const sitePublished = "2026-11-02";
+  const buildDate = new Date().toISOString().slice(0, 10);
+  const pageUrl = `${site.baseUrl}/${page.path === "index.html" ? "" : page.path}`;
+  const articleImage = `${site.baseUrl}/${page.ogImage || site.ogImage}`;
+  const organisation = {
+    "@type": "Organization",
+    name: site.name,
+    url: site.baseUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${site.baseUrl}/${site.ogImage || "assets/img/og-nyctrove.jpg"}`,
+    },
+    publishingPrinciples: `${site.baseUrl}/${site.editorialHref || "editorial.html"}`,
+  };
+
+  const pageNodes = (page.jsonLd || []).map((node) => {
+    if (!node || typeof node !== "object") return node;
+    const type = node["@type"];
+    if (type !== "Article" && type !== "BlogPosting" && type !== "NewsArticle") return node;
+    return {
+      datePublished: node.datePublished || sitePublished,
+      dateModified: node.dateModified || buildDate,
+      image: node.image || articleImage,
+      author: node.author || { ...organisation },
+      publisher: node.publisher || { ...organisation },
+      mainEntityOfPage: node.mainEntityOfPage || pageUrl,
+      ...node,
+    };
+  });
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: site.name,
+      url: site.baseUrl,
+      description: site.description,
+      inLanguage: "en",
+      publisher: organisation,
+    },
+    organisation,
+    ...pageNodes,
+  ];
+
+  return `<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(page.description)}" />
+<meta name="robots" content="${robots}" />
+<link rel="canonical" href="${canonical}" />
+<link rel="alternate" type="application/rss+xml" title="${site.name} — latest guides" href="feed.xml" />
+<meta name="theme-color" content="#0b0d10" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="${ogType}" />
+<meta property="og:site_name" content="${site.name}" />
+<meta property="og:title" content="${esc(title)}" />
+<meta property="og:description" content="${esc(page.description)}" />
+<meta property="og:url" content="${canonical}" />
+<meta property="og:image" content="${ogImage}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image:alt" content="${esc(title)}" />
+${ogType === "article" ? `<meta property="article:published_time" content="${sitePublished}" />\n<meta property="article:modified_time" content="${buildDate}" />` : ""}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${esc(title)}" />
+<meta name="twitter:description" content="${esc(page.description)}" />
+<meta name="twitter:image" content="${ogImage}" />
+<meta name="twitter:image:alt" content="${esc(title)}" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="assets/css/main.css?v=${assetVersion}" />
+<script>document.documentElement.classList.remove("no-js");</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<script type="application/ld+json">
+${JSON.stringify(jsonLd, null, 0)}
+</script>${page.headExtra ? `\n${page.headExtra}` : ""}`;
+}
+
+function header(page) {
+  const current = page.navSection || "";
+  const links = site.nav
+    .map(
+      (item) =>
+        `<li><a class="main-nav__link" href="${item.href}"${
+          item.id === current ? ' aria-current="page"' : ""
+        }>${item.label}</a></li>`
+    )
+    .join("");
+
+  const mobileLinks = [
+    `<a href="index.html">Home <span>NYC</span></a>`,
+    ...site.nav.map((item) => `<a href="${item.href}">${item.label} <span>0${site.nav.indexOf(item) + 1}</span></a>`),
+  ].join("");
+
+  return `<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="${site.name} — home">
+      ${site.brandMark}
+      ${site.brandTag}
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__list">${links}</ul>
+      <button class="nav-search" type="button" aria-label="Search the guide" data-search-open>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn--sm main-nav__cta" href="weekends.html">Browse weekends</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" data-mobile-nav>
+  <nav aria-label="Mobile">
+    ${mobileLinks}
+  </nav>
+  <p class="mobile-nav__foot">${site.navFoot}</p>
+</div>`;
+}
+
+function footer() {
+  const columns = site.footer
+    .map(
+      (col) => `<div>
+  <h4>${col.title}</h4>
+  <ul>${col.links.map((l) => `<li><a href="${l.href}">${l.label}</a></li>`).join("")}</ul>
+</div>`
+    )
+    .join("");
+
+  return `<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html">
+          ${site.brandMark}
+        </a>
+        <p>${site.footerBlurb}</p>
+      </div>
+      ${columns}
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; ${site.year} ${site.name}. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a href="credits.html">Credits</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+</div>
+
+<div class="search-overlay" data-search-overlay hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search ${site.name}">
+    <div class="search-panel__head">
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search itineraries, attractions, food, transport…" aria-label="Search the guide" autocomplete="off" data-search-input />
+      <button class="search-panel__close" type="button" aria-label="Close search" data-search-close>×</button>
+    </div>
+    <ul class="search-results" data-search-results></ul>
+    <p class="search-hint">Press <strong>/</strong> to search · <strong>Esc</strong> to close</p>
+  </div>
+</div>
+<script src="assets/js/main.js?v=${assetVersion}" defer></script>
+<script src="assets/js/search.js?v=${assetVersion}" defer></script>`;
+}
+
+export function renderPage({ page, body }) {
+  const bodyClass = ["no-js", page.bodyClass].filter(Boolean).join(" ");
+  return `<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+${head({ page })}
+</head>
+<body class="${bodyClass}">
+<a class="skip-link" href="#main">Skip to content</a>
+${header(page)}
+<main id="main">
+${body}
+</main>
+${footer()}
+${page.scripts || ""}
+</body>
+</html>
+`;
+}

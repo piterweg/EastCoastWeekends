@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>East Coast Weekends — New York City guides</title>
+    <link>https://eastcoastweekends.com/</link>
+    <description>East Coast Weekends is an independent guide to the best two- and three-day trips within reach of New York: the Hudson Valley, Philadelphia, Boston, Washington and Niagara Falls, with train times, costs and honest itineraries.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Nov 2026 17:38:41 GMT</lastBuildDate>
+    <atom:link href="https://eastcoastweekends.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>East Coast Weekends — Two-Day Trips from New York</title>
+      <link>https://eastcoastweekends.com/</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Independent guides to the best two- and three-day trips from New York: Hudson Valley, Philadelphia, Boston, Washington and Niagara, with train times and fares.</description>
+    </item>
+    <item>
+      <title>Boston Weekend from NYC</title>
+      <link>https://eastcoastweekends.com/boston.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/boston.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>A Boston weekend from New York: the Freedom Trail, Beacon Hill, the North End and where to stay, with Amtrak times and fares.</description>
+    </item>
+    <item>
+      <title>Weekend Destinations from New York</title>
+      <link>https://eastcoastweekends.com/destinations.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/destinations.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Five East Coast destinations for a two- or three-day break from New York, with travel times and what each is best for.</description>
+    </item>
+    <item>
+      <title>Hudson Valley Weekend from NYC</title>
+      <link>https://eastcoastweekends.com/hudson-valley.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/hudson-valley.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>A car-free Hudson Valley weekend from New York: Dia Beacon, Storm King, Cold Spring and where to stay, with Metro-North times and costs.</description>
+    </item>
+    <item>
+      <title>Niagara Falls Weekend from NYC</title>
+      <link>https://eastcoastweekends.com/niagara-falls.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/niagara-falls.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>A Niagara Falls weekend from New York: the falls, Maid of the Mist, Cave of the Winds and where to stay, with train and flight options.</description>
+    </item>
+    <item>
+      <title>Philadelphia Weekend from NYC</title>
+      <link>https://eastcoastweekends.com/philadelphia.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/philadelphia.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>A Philadelphia weekend from New York: Independence Hall, Reading Terminal Market, the Rocky Steps and where to stay, with Amtrak times and fares.</description>
+    </item>
+    <item>
+      <title>Washington D.C. Weekend from NYC</title>
+      <link>https://eastcoastweekends.com/washington-dc.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/washington-dc.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>A Washington, D.C. weekend from New York: the National Mall, Smithsonian museums, the Capitol and Georgetown, with Amtrak times and fares.</description>
+    </item>
+    <item>
+      <title>Weekend Trips from New York — Compared</title>
+      <link>https://eastcoastweekends.com/weekends.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/weekends.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Five weekend trips from New York compared by journey time, round-trip fare, how many nights you need and what each place is best for.</description>
+    </item>
+    <item>
+      <title>About East Coast Weekends</title>
+      <link>https://eastcoastweekends.com/about.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/about.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Who writes East Coast Weekends, how trips are researched, how fares and opening hours are checked and how corrections work.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://eastcoastweekends.com/contact.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/contact.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Contact East Coast Weekends with corrections, questions or partnership enquiries. We reply to price corrections and genuine editorial questions.</description>
+    </item>
+    <item>
+      <title>Photo Credits</title>
+      <link>https://eastcoastweekends.com/credits.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/credits.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Photo credits, authors and Creative Commons licences for every photograph used on East Coast Weekends, with links to the original sources.</description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>https://eastcoastweekends.com/privacy.html</link>
+      <guid isPermaLink="true">https://eastcoastweekends.com/privacy.html</guid>
+      <pubDate>Thu, 12 Nov 2026 17:38:41 GMT</pubDate>
+      <description>Privacy policy for East Coast Weekends: what data is collected at launch, how cookies and storage are used, and how to contact us about privacy.</description>
+    </item>
+  </channel>
+</rss>

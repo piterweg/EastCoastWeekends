@@ -1,0 +1,46 @@
+/** Global site configuration. */
+export const site = {
+  name: "East Coast Weekends",
+  tagline: "Weekends beyond New York",
+  description: "East Coast Weekends is an independent guide to the best two- and three-day trips within reach of New York: the Hudson Valley, Philadelphia, Boston, Washington and Niagara Falls, with train times, costs and honest itineraries.",
+  baseUrl: "https://eastcoastweekends.com",
+  email: "hello@eastcoastweekends.com",
+  year: 2026,
+  brandMark: "East<span>Coast</span>",
+  brandTag: "Weekends",
+  footerBlurb: "An independent guide to weekends beyond New York: train times, honest costs and two-day plans.",
+  ogImage: "assets/img/hudson-valley.webp",
+  editorialHref: "about.html",
+  navFoot: "Independent weekend guides for the East Coast.",
+  nav: [
+    { id: "weekends", label: "Weekends", href: "weekends.html" },
+    { id: "destinations", label: "Destinations", href: "destinations.html" },
+    { id: "about", label: "About", href: "about.html" },
+  ],
+  footer: [
+    {
+      title: "Plan",
+      links: [
+        { label: "Weekend planner", href: "weekends.html" },
+        { label: "Destinations", href: "destinations.html" },
+      ],
+    },
+    {
+      title: "Destinations",
+      links: [
+        { label: "Hudson Valley", href: "hudson-valley.html" },
+        { label: "Philadelphia", href: "philadelphia.html" },
+        { label: "Boston", href: "boston.html" },
+        { label: "Washington, D.C.", href: "washington-dc.html" },
+        { label: "Niagara Falls", href: "niagara-falls.html" },
+      ],
+    },
+    {
+      title: "Site",
+      links: [
+        { label: "About", href: "about.html" },
+      ],
+    },
+  ],
+  social: [],
+};
