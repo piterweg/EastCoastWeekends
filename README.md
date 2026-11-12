@@ -31,3 +31,13 @@ tools/              build, QA, screenshot helpers
 ## Editorial rules
 
 Train-first, dates and fares checked against the operator, no invented prices, no paid rankings. Photo credits live at `/credits.html`.
+
+## Deployment (Hostinger Git)
+
+1. hPanel → **Websites → Add website** for the domain, choose an empty PHP/HTML site.
+2. hPanel → **Advanced → Git** → connect this GitHub repository, branch `main`.
+3. Set the deploy directory to `public_html` and enable automatic deployment on push.
+4. Install the free SSL certificate and test the domain, `/sitemap.xml`, `/robots.txt` and 404.
+5. Search Console: add the domain property, submit the sitemap and request indexing for the home page.
+
+Builds are committed with the generated HTML, so Hostinger needs no Node.js at deploy time.
