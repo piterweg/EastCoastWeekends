@@ -80,7 +80,7 @@ ${ctaBand({
   eyebrowText: "Plan the next one",
   title: "Pick a direction, not a checklist",
   text: "Start with how long you have and how far you are willing to travel. The rest follows.",
-  actions: `${btn({ href: "weekends.html", label: "Compare weekends" })}${btn({ href: "destinations.html", label: "All destinations", variant: "ghost" })}`,
+  actions: `${btn({ href: "weekends.html", label: "Compare weekends" })}${btn({ href: "destinations.html", label: "All destinations", variant: "ghost" })}<a class="btn btn--ghost" href="https://nyctrove.com" rel="noopener">New York itself: NYCTrove</a>`,
 })}
 `,
 };
