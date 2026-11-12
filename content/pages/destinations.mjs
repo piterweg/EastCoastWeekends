@@ -27,6 +27,10 @@ ${pageHero({
       ${mediaCard({ href: "boston.html", image: img("boston-skyline.webp"), alt: "Boston skyline", kicker: "Massachusetts", title: "Boston", text: "The Freedom Trail, Beacon Hill and the North End in a weekend.", meta: "3h30 · 2 days" })}
       ${mediaCard({ href: "washington-dc.html", image: img("washington-capitol.webp"), alt: "The US Capitol", kicker: "Washington, D.C.", title: "Washington, D.C.", text: "Smithsonian museums, the Mall and Georgetown.", meta: "2h50 · 2 days" })}
       ${mediaCard({ href: "niagara-falls.html", image: img("niagara-falls.webp"), alt: "Niagara Falls", kicker: "New York State", title: "Niagara Falls", text: "The falls, Maid of the Mist and a night in Buffalo or Niagara-on-the-Lake.", meta: "Overnight · 2 nights" })}
+      ${mediaCard({ href: "catskills.html", image: img("hudson-valley.webp"), alt: "Wooded hills in the Catskills", kicker: "New York State", title: "Catskills", text: "Hiking, small towns and a slower pace — car or bus, not Metro-North.", meta: "2h30 · 2 nights" })}
+      ${mediaCard({ href: "jersey-shore.html", image: img("brooklyn-bridge-park.webp"), alt: "A boardwalk at the Jersey Shore", kicker: "New Jersey", title: "Jersey Shore", text: "Asbury Park, Ocean Grove and the boardwalk, by train.", meta: "1h50 · 1–2 nights" })}
+      ${mediaCard({ href: "berkshires.html", image: img("boston-skyline.webp"), alt: "Green hills in the Berkshires", kicker: "Massachusetts", title: "Berkshires", text: "Mass MoCA, Tanglewood and Great Barrington.", meta: "3h30 · 2 nights" })}
+      ${mediaCard({ href: "finger-lakes.html", image: img("niagara-falls.webp"), alt: "A gorge in the Finger Lakes", kicker: "New York State", title: "Finger Lakes", text: "Watkins Glen, Seneca Lake wineries and Ithaca — the long-weekend exception.", meta: "5h · 2–3 nights" })}
     </div>
   </div>
 </section>

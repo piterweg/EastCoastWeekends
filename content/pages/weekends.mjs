@@ -16,9 +16,9 @@ ${pageHero({
   alt: "The Hudson Valley in autumn, with the river and wooded hills",
   crumbs: [{ href: "/", label: "Home" }, { href: "weekends.html", label: "Weekends" }],
   eyebrowText: "Weekends",
-  title: "Five weekends, one decision",
+  title: "Nine weekends, one decision",
   lead: "Journey time is the whole argument. Under two hours each way and you can leave on Saturday morning; over three and the trip only works with a night either end.",
-  meta: metaItems("5 destinations", "Train-first", "Fares checked November 2026", "2–3 day plans"),
+  meta: metaItems("9 destinations", "Train-first", "Fares checked November 2026", "2–3 day plans"),
 })}
 
 <section class="section">
@@ -33,6 +33,10 @@ ${pageHero({
         ["<a href=\"boston.html\"><strong>Boston</strong></a>", "Amtrak / Acela", "3h30–4h15", "$80–250", "1–2", "Freedom Trail, Beacon Hill, North End"],
         ["<a href=\"washington-dc.html\"><strong>Washington, D.C.</strong></a>", "Amtrak / Acela", "2h50–3h20", "$80–250", "1–2", "Smithsonian, the Mall, Georgetown"],
         ["<a href=\"niagara-falls.html\"><strong>Niagara Falls</strong></a>", "Amtrak Maple Leaf / fly to Buffalo", "~9h train; 1h30 + drive", "$140–300", "2", "The falls, Maid of the Mist"],
+        ["<a href=\"catskills.html\"><strong>Catskills</strong></a>", "Car or Trailways bus", "~2h30 car; ~2h45 bus", "$60–70 bus; fuel by car", "2", "Hiking, small towns, autumn"],
+        ["<a href=\"jersey-shore.html\"><strong>Jersey Shore</strong></a>", "NJ Transit North Jersey Coast Line", "~1h50", "~$35–40", "1–2", "Beach, boardwalk, music"],
+        ["<a href=\"berkshires.html\"><strong>Berkshires</strong></a>", "Amtrak Lake Shore Limited or car", "~3h30 train; ~2h45 car", "$70–120 train", "2", "Mass MoCA, Tanglewood, countryside"],
+        ["<a href=\"finger-lakes.html\"><strong>Finger Lakes</strong></a>", "Car (or fly to Rochester/Ithaca)", "~4h30–5h", "Fuel/tolls; flights extra", "2–3", "Wine, gorges, lakes"],
       ],
     })}
   </div>

@@ -33,6 +33,10 @@ export const site = {
         { label: "Boston", href: "boston.html" },
         { label: "Washington, D.C.", href: "washington-dc.html" },
         { label: "Niagara Falls", href: "niagara-falls.html" },
+        { label: "Catskills", href: "catskills.html" },
+        { label: "Jersey Shore", href: "jersey-shore.html" },
+        { label: "Berkshires", href: "berkshires.html" },
+        { label: "Finger Lakes", href: "finger-lakes.html" },
       ],
     },
     {

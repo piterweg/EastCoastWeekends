@@ -19,7 +19,7 @@ ${heroHome({
   title: "Two days. One train. <em>A different pace.</em>",
   lead: "New York is a great city and a terrible place to spend every weekend. These are the trips worth the train fare — planned around what actually fits into two or three days.",
   actions: `${btn({ href: "weekends.html", label: "Browse weekends" })}${btn({ href: "destinations.html", label: "See destinations", variant: "ghost" })}`,
-  meta: metaItems("<strong>5</strong> destinations", "<strong>2–3</strong> day plans", "<strong>Train-first</strong>", "<strong>Checked</strong> November 2026"),
+  meta: metaItems("<strong>9</strong> destinations", "<strong>2–3</strong> day plans", "<strong>Train-first</strong>", "<strong>Checked</strong> November 2026"),
 })}
 
 <section class="section">
@@ -59,13 +59,17 @@ ${heroHome({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "The shortlist", title: "Five places worth the journey", lead: "Ranked by how much weekend you get for the travel time." })}
+    ${sectionHead({ eyebrowText: "The shortlist", title: "Nine places worth the journey", lead: "Ranked by how much weekend you get for the travel time." })}
     <div class="grid grid--3">
       ${mediaCard({ href: "hudson-valley.html", image: img("hudson-valley.webp"), alt: "The Hudson Valley", kicker: "New York State", title: "Hudson Valley", text: "Art, river towns and the easiest car-free weekend from the city.", meta: "1h20 · Metro-North" })}
       ${mediaCard({ href: "philadelphia.html", image: img("philadelphia-skyline.webp"), alt: "Philadelphia skyline", kicker: "Pennsylvania", title: "Philadelphia", text: "The most walkable big-city weekend on the East Coast.", meta: "1h05 · Amtrak" })}
       ${mediaCard({ href: "boston.html", image: img("boston-skyline.webp"), alt: "Boston skyline", kicker: "Massachusetts", title: "Boston", text: "Compact, historic and best on foot from Back Bay.", meta: "3h30 · Amtrak" })}
       ${mediaCard({ href: "washington-dc.html", image: img("washington-capitol.webp"), alt: "The US Capitol in Washington, D.C.", kicker: "Washington, D.C.", title: "Washington, D.C.", text: "Museums, the Mall and a city that rewards an early start.", meta: "2h50 · Amtrak" })}
       ${mediaCard({ href: "niagara-falls.html", image: img("niagara-falls.webp"), alt: "Niagara Falls", kicker: "New York State", title: "Niagara Falls", text: "The one trip on this list that needs two nights, not one.", meta: "Overnight · train or fly" })}
+      ${mediaCard({ href: "catskills.html", image: img("hudson-valley.webp"), alt: "Wooded hills in the Catskills", kicker: "New York State", title: "Catskills", text: "Hiking, small towns and a slower pace — car or bus.", meta: "2h30 · 2 nights" })}
+      ${mediaCard({ href: "jersey-shore.html", image: img("brooklyn-bridge-park.webp"), alt: "A boardwalk at the Jersey Shore", kicker: "New Jersey", title: "Jersey Shore", text: "Asbury Park, Ocean Grove and the boardwalk, by train.", meta: "1h50 · 1–2 nights" })}
+      ${mediaCard({ href: "berkshires.html", image: img("boston-skyline.webp"), alt: "Green hills in the Berkshires", kicker: "Massachusetts", title: "Berkshires", text: "Mass MoCA, Tanglewood and Great Barrington.", meta: "3h30 · 2 nights" })}
+      ${mediaCard({ href: "finger-lakes.html", image: img("niagara-falls.webp"), alt: "A gorge in the Finger Lakes", kicker: "New York State", title: "Finger Lakes", text: "Watkins Glen, Seneca Lake wineries and Ithaca.", meta: "5h · 2–3 nights" })}
     </div>
   </div>
 </section>
