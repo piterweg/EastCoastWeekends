@@ -23,9 +23,9 @@ ${pageHero({
   <div class="container container--narrow">
     <div class="prose">
       <h2>What we collect</h2>
-      <p>At launch this site does not run analytics or advertising cookies. If you email us, we receive your email address and message; we use it only to reply.</p>
+      <p>Google Analytics 4 runs only if you accept the cookie banner. Before that, analytics storage is denied and no analytics cookies are set. If you email us, we receive your email address and message and use it only to reply.</p>
       <h2>Cookies</h2>
-      <p>No non-essential cookies are set. The site may use browser storage only for interface preferences.</p>
+      <p>Analytics cookies are set only after you press Accept. Your choice is stored in your browser; you can change it by clearing site data. The site may also use browser storage for interface preferences.</p>
       <h2>Newsletter</h2>
       <p>The newsletter form is not connected to a provider yet. Do not submit an address expecting a subscription until we announce the list is live.</p>
       <h2>Contact</h2>

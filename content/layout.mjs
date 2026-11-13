@@ -63,6 +63,7 @@ function head({ page }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(page.description)}" />
 <meta name="robots" content="${robots}" />
+<meta name="google-site-verification" content="J5m8zK71ktC0nMNtYuoKK4aFJMoj9JT2g9OTabX232E" />
 <link rel="canonical" href="${canonical}" />
 <link rel="alternate" type="application/rss+xml" title="${site.name} — latest guides" href="feed.xml" />
 <meta name="theme-color" content="#0b0d10" />
@@ -93,6 +94,19 @@ ${ogType === "article" ? `<meta property="article:published_time" content="${sit
 />
 <link rel="stylesheet" href="assets/css/main.css?v=${assetVersion}" />
 <script>document.documentElement.classList.remove("no-js");</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QKX2E6KQ3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+  gtag('config', 'G-0QKX2E6KQ3');
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -187,6 +201,14 @@ function footer() {
   </div>
 </footer>
 <a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+</div>
+
+<div class="consent-banner" data-consent-banner data-consent-controls hidden>
+  <p>We use Google Analytics to understand which pages are useful. Analytics cookies stay off until you accept. <a href="privacy.html">Privacy policy</a>.</p>
+  <div class="consent-banner__actions">
+    <button class="btn btn--sm" type="button" data-consent-choice="denied">Decline</button>
+    <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
+  </div>
 </div>
 
 <div class="search-overlay" data-search-overlay hidden>
