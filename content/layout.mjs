@@ -129,8 +129,8 @@ function header(page) {
   return `<header class="site-header" data-header>
   <div class="container">
     <a class="brand" href="index.html" aria-label="${site.name} — home">
-      <img class="brand__logo" src="assets/img/logo.svg" alt="" width="34" height="34" />${site.brandMark}
-      ${site.brandTag}
+      <img class="brand__logo" src="assets/img/logo.svg" alt="" width="34" height="34" /><span class="brand__mark">${site.brandMark}</span>
+      <span class="brand__tag" aria-hidden="true">${site.brandTag}</span>
     </a>
     <nav class="main-nav" aria-label="Primary">
       <ul class="main-nav__list">${links}</ul>
@@ -168,7 +168,7 @@ function footer() {
     <div class="site-footer__grid">
       <div class="site-footer__brand">
         <a class="brand" href="index.html">
-          ${site.brandMark}
+          <img class="brand__logo" src="assets/img/logo.svg" alt="" width="36" height="36" /><span class="brand__mark">${site.brandMark}</span>
         </a>
         <p>${site.footerBlurb}</p>
       </div>

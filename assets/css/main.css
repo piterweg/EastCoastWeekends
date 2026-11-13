@@ -3276,6 +3276,20 @@ body.search-open {
 .brand { align-items: center; }
 .brand__logo { width: 34px; height: 34px; flex: none; }
 @media (max-width: 640px) { .brand__logo { width: 30px; height: 30px; } }
+
+/* Brand lockup */
+.brand__mark {
+  font-size: clamp(1.15rem, 2.1vw, 1.55rem);
+  letter-spacing: -0.02em;
+}
+.brand { gap: 0.7rem; }
+.brand__logo { width: 40px; height: 40px; border-radius: 10px; }
+.site-footer__brand .brand__logo { width: 36px; height: 36px; }
+@media (max-width: 640px) {
+  .brand__mark { font-size: 1.12rem; }
+  .brand__tag { display: none; }
+  .brand__logo { width: 32px; height: 32px; }
+}
 /* Print */
 @media print {
   .site-header,
