@@ -9,7 +9,7 @@ export const site = {
   brandMark: "East Coast<span>Weekends</span>",
   brandTag: "Weekend guides",
   footerBlurb: "An independent guide to weekends beyond New York: train times, honest costs and two-day plans.",
-  ogImage: "assets/img/hudson-valley.webp",
+  ogImage: "assets/img/og-eastcoastweekends.jpg",
   editorialHref: "about.html",
   navFoot: "Independent weekend guides for the East Coast.",
   nav: [

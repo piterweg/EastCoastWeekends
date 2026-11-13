@@ -10,7 +10,7 @@ export default {
     "Independent guides to the best two- and three-day trips from New York: Hudson Valley, Philadelphia, Boston, Washington and Niagara, with train times and fares.",
   priority: "1.0",
   changefreq: "weekly",
-  ogImage: "assets/img/hudson-valley.webp",
+  ogImage: "assets/img/og-eastcoastweekends.jpg",
   render: () => `
 ${heroHome({
   image: img("hudson-valley.webp"),
