@@ -3272,6 +3272,10 @@ body.search-open {
   }
 }
 
+/* Brand logo emblem */
+.brand { align-items: center; }
+.brand__logo { width: 34px; height: 34px; flex: none; }
+@media (max-width: 640px) { .brand__logo { width: 30px; height: 30px; } }
 /* Print */
 @media print {
   .site-header,

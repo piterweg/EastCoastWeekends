@@ -129,7 +129,7 @@ function header(page) {
   return `<header class="site-header" data-header>
   <div class="container">
     <a class="brand" href="index.html" aria-label="${site.name} — home">
-      ${site.brandMark}
+      <img class="brand__logo" src="assets/img/logo.svg" alt="" width="34" height="34" />${site.brandMark}
       ${site.brandTag}
     </a>
     <nav class="main-nav" aria-label="Primary">

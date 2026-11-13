@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="East Coast Weekends">
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#121713"/>
+  <rect x="7" y="7" width="50" height="50" rx="9" fill="none" stroke="#c8a45c" stroke-width="1.2" opacity=".7"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#d7b979" letter-spacing="1">EC</text>
+  <path d="M22 48h20" stroke="#8a6a3b" stroke-width="2" stroke-linecap="round"/>
+</svg>
