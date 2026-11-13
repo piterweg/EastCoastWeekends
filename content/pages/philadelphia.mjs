@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Philadelphia questions", lead: "" })}
     ${faq([{ q: "Is one night enough?", a: "<p>Yes. One full Saturday and a Sunday morning covers the old city and one museum.</p>" }, { q: "Amtrak or NJ Transit?", a: "<p>Amtrak is faster and more comfortable; NJ Transit to Trenton plus SEPTA is slower but can be much cheaper.</p>" }, { q: "Where should I stay?", a: "<p>Center City, near Rittenhouse or Market East. Both are walkable to the old city and the market.</p>" }])}
   </div>
 </section>

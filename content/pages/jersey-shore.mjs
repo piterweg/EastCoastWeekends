@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Jersey Shore questions", lead: "" })}
     ${faq([{ q: "Do I need a car?", a: "<p>No. The train station is a short walk from the beach and boardwalk.</p>" }, { q: "Which town is best?", a: "<p>Asbury Park for food and music; Ocean Grove for quiet; Spring Lake for a prettier, pricier beach.</p>" }, { q: "When is the season?", a: "<p>Memorial Day to Labor Day for swimming; the boardwalk is open year-round.</p>" }])}
   </div>
 </section>

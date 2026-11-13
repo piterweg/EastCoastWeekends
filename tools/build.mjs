@@ -146,6 +146,14 @@ await writeFile(
 );
 
 
+// Placeholder check (catches __TEMPLATE_TOKENS__ left in generated HTML)
+const placeholderProblems = [];
+for (const page of pages) {
+  const html = await readFile(path.join(root, page.path), "utf8");
+  const found = html.match(/__[A-Z][A-Z_]+__/g);
+  if (found) placeholderProblems.push(`${page.path}: ${[...new Set(found)].join(", ")}`);
+}
+
 // Internal link check
 const problems = [];
 for (const page of pages) {
@@ -168,6 +176,11 @@ for (const page of pages) {
 }
 
 console.log(`✓ Built ${written} pages in ${path.relative(process.cwd(), root) || "."}`);
+if (placeholderProblems.length) {
+  console.warn(`\n⚠  ${placeholderProblems.length} page(s) contain unreplaced placeholders:`);
+  for (const p of placeholderProblems) console.warn(`   - ${p}`);
+  process.exitCode = 1;
+}
 if (problems.length) {
   console.warn(`\n⚠  ${problems.length} internal link(s) point to unknown pages:`);
   for (const p of problems) console.warn(`   - ${p}`);

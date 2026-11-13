@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Boston questions", lead: "" })}
     ${faq([{ q: "Is one night enough?", a: "<p>It is tight. One night lets you do the Freedom Trail and one neighbourhood; two nights add a museum and a slower Sunday.</p>" }, { q: "Do I need the T?", a: "<p>Mostly no. The historic core is walkable; the T is useful for the museum district and the airport.</p>" }, { q: "When is the best time?", a: "<p>Late spring and early autumn. Summer is busy; winter is cold but the museums are quiet.</p>" }])}
   </div>
 </section>

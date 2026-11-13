@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Catskills questions", lead: "" })}
     ${faq([{ q: "Can I do it without a car?", a: "<p>Yes: bus to Phoenicia and taxis to trailheads. It is easier with a car, especially for Kaaterskill Falls.</p>" }, { q: "Is two nights enough?", a: "<p>Yes. One full day is enough for a big walk and a town; two nights keep it relaxed.</p>" }, { q: "When should I go?", a: "<p>Late spring to autumn for walking; winter needs proper gear and flexible plans.</p>" }])}
   </div>
 </section>

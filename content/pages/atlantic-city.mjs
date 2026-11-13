@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Atlantic City questions", lead: "" })}
     ${faq([{ q: "Do I need a car?", a: "<p>No. The bus drops you within walking distance of the boardwalk.</p>" }, { q: "Is one night enough?", a: "<p>Yes for a beach and boardwalk weekend; two nights if you want a slower Sunday.</p>" }, { q: "When is best?", a: "<p>Summer for swimming; late spring and early autumn for cheap rates.</p>" }])}
   </div>
 </section>

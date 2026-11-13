@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Hudson Valley questions", lead: "" })}
     ${faq([{ q: "Do I need a car?", a: "<p>No. Beacon is walkable from the station and Storm King is a short taxi ride. A car makes Storm King easier but is not essential.</p>" }, { q: "Is one night enough?", a: "<p>Yes if you pick two of the three stops. Two nights let you add a longer walk and a slower Sunday.</p>" }, { q: "When is the best time?", a: "<p>Late spring and autumn for walking. Summer is green and busy; winter closes some sculpture parks.</p>" }])}
   </div>
 </section>

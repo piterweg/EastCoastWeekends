@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Washington questions", lead: "" })}
     ${faq([{ q: "Is a weekend enough?", a: "<p>Yes for the Mall, two museums and the monuments. The city rewards a second visit, but two days give a real sense of it.</p>" }, { q: "Are museums really free?", a: "<p>The Smithsonian museums are free. Special exhibitions and some tours are ticketed.</p>" }, { q: "Where should I stay?", a: "<p>Near the Mall for sightseeing, Dupont Circle for restaurants and a quieter evening.</p>" }])}
   </div>
 </section>

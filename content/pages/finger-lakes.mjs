@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Finger Lakes questions", lead: "" })}
     ${faq([{ q: "Can I do it without a car?", a: "<p>Not practically. Fly to Rochester or Ithaca and rent a car if you do not want to drive from New York.</p>" }, { q: "How many nights?", a: "<p>Two minimum, three better. The drive is four and a half hours each way.</p>" }, { q: "When is best?", a: "<p>Summer for the lake and early autumn for wine and foliage.</p>" }])}
   </div>
 </section>

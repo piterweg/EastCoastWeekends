@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Berkshires questions", lead: "" })}
     ${faq([{ q: "Train or car?", a: "<p>The train is scenic but once daily; a car makes the towns and trails much easier.</p>" }, { q: "Is two nights enough?", a: "<p>Yes for Mass MoCA and one town. Add a night for Tanglewood or a longer hike.</p>" }, { q: "When is Tanglewood?", a: "<p>Summer only; check the season dates and book ahead.</p>" }])}
   </div>
 </section>

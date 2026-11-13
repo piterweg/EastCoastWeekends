@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Cape May questions", lead: "" })}
     ${faq([{ q: "Can I do it without a car?", a: "<p>Seasonal buses exist but are slow. A car is the practical option.</p>" }, { q: "Is two nights enough?", a: "<p>Yes for the town and beach; three nights let you add the ferry or a birding morning.</p>" }, { q: "When is best?", a: "<p>Late spring and early autumn for quiet; summer for the beach.</p>" }])}
   </div>
 </section>

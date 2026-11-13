@@ -82,7 +82,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Questions", title: "__FAQ_TITLE__", lead: "" })}
+    ${sectionHead({ eyebrowText: "Questions", title: "Niagara questions", lead: "" })}
     ${faq([{ q: "Can I do it as a day trip?", a: "<p>Not comfortably. The train is about nine hours each way, so two nights is the realistic minimum.</p>" }, { q: "Train or fly?", a: "<p>The train is scenic but slow. Flying to Buffalo is faster overall but adds airport time and transfers.</p>" }, { q: "Which side is better?", a: "<p>The Canadian side has the classic panoramic view; the New York side has the state park and Cave of the Winds. A passport lets you do both.</p>" }])}
   </div>
 </section>
